@@ -1,0 +1,1457 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+body {
+    background-color: white;
+    margin: 0px;
+    width: 1024px;
+    height: 3380px;
+}
+
+header {
+  position: fixed;
+  overflow: visible;
+  top: 0px;
+  background-color: white;
+  height: 50px;
+  width: 100%;
+}
+
+#menu {
+  position: relative;
+  overflow: visible;
+  left: 185px;
+  top: -36px;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #E10600;
+}
+
+#menu .menu_link {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 27.2px 20px;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+}
+
+.dropdown {
+  overflow: visible;
+}
+
+.dropdown button {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  border: 0;
+  padding: 27.2px 20px;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  background-color: #E10600;
+}
+
+#races_drodown {
+  overflow: visible;
+  display: none;
+  position: absolute;
+  top: 69.4px;
+  left: -200px;
+  height: 410px;
+  width: 1400px;
+  background-color: #15151E;
+  z-index: 5;
+  border-bottom: 2px solid red;
+}
+
+#standings_drodown {
+  overflow: visible;
+  display: none;
+  position: absolute;
+  top: 69.4px;
+  left: -200px;
+  height: 150px;
+  width: 1400px;
+  background-color: #15151E;
+  z-index: 5;
+  border-bottom: 2px solid red;
+}
+
+#drives_drodown {
+  overflow: visible;
+  display: none;
+  position: absolute;
+  top: 69.4px;
+  left: -200px;
+  height: 425px;
+  width: 1400px;
+  background-color: #15151E;
+  z-index: 5;
+  border-bottom: 2px solid red;
+}
+
+#teams_drodown {
+  overflow: visible;
+  display: none;
+  position: absolute;
+  top: 69.4px;
+  left: -200px;
+  height: 500px;
+  width: 1400px;
+  background-color: #15151E;
+  z-index: 5;
+  border-bottom: 2px solid red;
+}
+
+#gaming_drodown {
+  overflow: visible;
+  display: none;
+  position: absolute;
+  top: 69.4px;
+  left: -200px;
+  height: 150px;
+  width: 1400px;
+  background-color: #15151E;
+  z-index: 5;
+  border-bottom: 2px solid red;
+}
+
+#menu .menu_link:hover {
+  animation: 0.5s ease-out 0s 1 hover_main_menu;
+  background-color: #15151E;
+}
+
+.dropdown:hover button{
+  animation: 0.5s ease-out 0s 1 hover_main_menu;
+  background-color: #15151E;
+}
+
+.dropdown:hover #races_drodown{
+  display: block;
+  animation: 0.5s ease-out 0s 1 fade_in_dropdown;
+}
+
+.dropdown:hover #standings_drodown{
+  display: block;
+  animation: 0.5s ease-out 0s 1 fade_in_dropdown;
+}
+
+.dropdown:hover #drives_drodown{
+  display: block;
+  animation: 0.5s ease-out 0s 1 fade_in_dropdown;
+}
+
+.dropdown:hover #teams_drodown{
+  display: block;
+  animation: 0.5s ease-out 0s 1 fade_in_dropdown;
+}
+
+.dropdown:hover #gaming_drodown{
+  display: block;
+  animation: 0.5s ease-out 0s 1 fade_in_dropdown;
+}
+
+@keyframes fade_in_dropdown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hover_main_menu {
+  0% {
+    background-color: #E10600;
+  }
+  100% {
+    background-color: #15151E;
+  }
+}
+
+#fia_logo {
+  position: relative;
+  height: 50%;
+  top: 12.5px;
+  left: 30px;
+  opacity: 0.40;
+}
+
+#fia_separator {
+  position: relative;
+  width: 1.5px;
+  height: 50%;
+  left: 81px;
+  top: -16px;
+  background-color: black;
+  opacity: 0.20;
+}
+
+#separator {
+  position: relative;
+  top: -5px;
+  width: 1.5px;
+  height: 20px;
+  background-color: black;
+  opacity: 0.2;
+}
+
+#tri_css {
+  position: relative;
+  top: -10px;
+  left: 115px;
+  width: 0px;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 8px solid #E10600;
+}
+
+#formulas {
+  position: absolute;
+  overflow: hidden;
+  left: 88px;
+  top: 5px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+}
+
+#formulas li{
+  position: relative;
+  float: left;
+  left: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+
+#options {
+  position: absolute;
+  overflow: visible;
+  left: 485px;
+  top: 8px;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+}
+
+#options li{
+  position: relative;
+  float: left;
+  left: 19px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+
+#options a{
+  color: #444444;
+  text-decoration: none;
+}
+
+#options li:hover a{
+  color: red;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: red;
+}
+
+#signin_btn {
+  position: relative;
+  top: -12px;
+  left: -10px;
+  height: 37px;
+  width: 90px;
+  color: white;
+  background-color: #15151E;
+  border-radius: 5px;
+  border: 1px solid #15151E;
+}
+
+#signin_btn:hover {
+  animation: 0.4s ease-out 0s 1 signin_btn_hover;
+  background-color: #444444;
+}
+
+@keyframes signin_btn_hover {
+  0% {
+    background-color: #15151E;
+  }
+  100% {
+    background-color: #444444;
+  }
+}
+
+#subscribe_btn {
+  position: relative;
+  top: -12px;
+  left: -25px;
+  height: 37px;
+  width: 90px;
+  color: white;
+  background-color: #E10600;
+  border-radius: 5px;
+  border: 2px solid #E10600;
+}
+
+#subscribe_btn:hover{
+  animation: 0.4s ease-out 0s 1 subscribe_btn_hover;
+  color: #15151E;
+  background-color: white;
+}
+
+@keyframes subscribe_btn_hover {
+  0% {
+    color: white;
+    background-color: #E10600;
+  }
+  100% {
+    color: #15151E;
+    background-color: white;
+  }
+}
+
+.active_formula {
+  display: contents;
+  text-decoration: none;
+  color: black;
+}
+
+.inactive_formula {
+  display: contents;
+  text-decoration: none;
+  color: grey;
+}
+
+.inactive_formula:hover{
+  color: black;
+}
+
+#topnav {
+  position: fixed;
+  overflow: visible;
+  top: 50px;
+  height: 70px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #E10600;
+}
+
+#f1_logo {
+  position: relative;
+  height: 47%;
+  top: 26.5%;
+  left: 30px;
+}
+
+#next_race {
+  position: relative;
+  overflow-x: hidden;
+  transform-origin:  top;
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
+  height: 140px;
+  width: 123.3%;
+  background-color: black;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 140px;
+  }
+}
+
+#line_pattern {
+  position: relative;
+  top: 15px;
+  left: 150px;
+  width: 975px;
+  height: 90px;
+}
+
+#line_pattern2 {
+  position: relative;
+  overflow: hidden;
+  top: 55px;
+  left: 150px;
+  width: 990px;
+  height: 90px;
+}
+
+.article_feature {
+  position: relative;
+  float: left;
+  top: 30px;
+  left: 150px;
+  width: 450px;
+  height: 500px;
+  border-top:    10px solid #E10600;
+  border-right:  10px solid #E10600;
+  border-top-right-radius: 5%;
+}
+
+.article_feature_change1 {
+  position: fixed;
+  float: left;
+  top: 150px;
+  left: 150px;
+  width: 450px;
+  height: 500px;
+  border-top:    10px solid #E10600;
+  border-right:  10px solid #E10600;
+  border-top-right-radius: 5%;
+}
+
+.article_feature_change2 {
+  position: relative;
+  float: left;
+  top: 530px;
+  left: 150px;
+  width: 450px;
+  height: 500px;
+  border-top:    10px solid #E10600;
+  border-right:  10px solid #E10600;
+  border-top-right-radius: 5%;
+}
+
+#artc_pic {
+  width: 430px;
+  height: 240px;
+  overflow: hidden;
+}
+
+#article1:hover img{
+  animation: 1s ease-out 0s 1 bigger_pic_article;
+  transform: scale(1.2);
+}
+
+@keyframes bigger_pic_article {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#article1:hover h1{
+  text-decoration: underline;
+}
+
+#article1 p {
+  color: #E50600;
+  font-size: 12px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#article1 h1 {
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.grid_news_artc {
+  position: relative;
+  top: 15px;
+  left: 165px;
+  display: grid;
+  grid-gap: 10px 20px;
+  width: 490px;
+  height: 1200px;
+  grid-template-columns: 230px 230px ;
+  background-color: white;
+  padding: 0px;
+}
+
+.grid_news_artc_change {
+  position: relative;
+  top: 15px;
+  left: 625px;
+  display: grid;
+  grid-gap: 10px 20px;
+  width: 490px;
+  height: 1200px;
+  grid-template-columns: 230px 230px ;
+  background-color: white;
+  padding: 0px;
+}
+
+.grid_news_artc_div {
+  height: 100px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid_news_artc_div img{
+  border-right-width: 1px;
+  width: 230px;
+  height: 130px;
+}
+
+.grid_news_text_div {
+  background-color: white;
+  width: 230px;
+  height: 140px;
+  border-bottom: 1px solid silver;
+  border-right:  1px solid silver;
+  border-bottom-right-radius: 10%;
+}
+
+.news_p_sm {
+  text-align: left;
+  font-size: 10px;
+  font-weight: bold;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.news_p_l {
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.grid_news_artc_div:hover img {
+  animation: 0.5s ease-out 0s 1 bigger_pic_new;
+  transform: scale(1.2);
+}
+
+.grid_news_artc_div:hover .grid_news_text_div{
+  transform-origin:  bottom;
+  animation: 0.5s ease-out 0s 1 bigger_div_new;
+  height: 170px;
+  transform: translateY(-30px);
+}
+
+@keyframes bigger_pic_new {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+@keyframes bigger_div_new {
+  0% {
+    height: 140px;
+    transform: translateY(0px);
+  }
+  100% {
+    height: 170px;
+    transform: translateY(-30px);
+  }
+}
+
+#more_news {
+  position: relative;
+  left: 20px;
+  width: 170px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 11px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background-color: #E31A15;
+  border-width: 2px;
+  border-color: #E31A15;
+  border-radius: 8px;
+}
+
+#more_news:hover {
+  animation: 0.5s ease-out 0s 1 button_change;
+  background-color: white;
+  color: black;
+}
+
+@keyframes button_change {
+  0% {
+    background-color: #E31A15;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+#racenews_outer_div {
+  position: relative;
+  top: -100px;
+  left: 150px;
+  width: 970px;
+  height: 480px;
+  border-right : 10px solid #E10600;
+  border-bottom: 10px solid #E10600;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#racenews_inner_div{
+  position: relative;
+  top: -10px;
+  left: 180px;
+  width: 790px;
+  height: 480px;
+  border-top: 10px solid #E10600;
+  border-right : 10px solid #E10600;
+  border-bottom: 10px solid #E10600;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#racenews_inner_div h1 {
+  position: relative;
+  top: -40px;
+  left: -180px;
+  text-align: left;
+  font-size: 28px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#rn_big_new {
+  position: absolute;
+  top: 30px;
+  left: -180px;
+  width: 460px;
+  height: 410px;
+  background-color: white;
+}
+
+#rn_big_textbox  {
+  width: 460px;
+  height: 160px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  border-bottom-right-radius: 10px;
+}
+
+#rn_big_new:hover img{
+  animation: 0.4s ease-out 0s 1 rc_big_img_changer;
+  transform: scale(1.2);
+}
+
+#rn_big_new:hover #rn_big_textbox{
+  transform-origin:  bottom;
+  animation: 0.4s ease-out 0s 1 rc_big_div_changer;
+  height: 180px;
+  transform: translateY(-20px);
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+
+@keyframes rc_big_img_changer {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rc_big_div_changer {
+  0% {
+    height: 160px;
+    transform: translateY(0px);
+  }
+  100% {
+    height: 180px;
+    transform: translateY(-20px);
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+#rn_big_new img {
+  width: 100%;
+  height: 100%;
+}
+
+#rn_big_new h4 {
+  position: relative;
+  text-align: left;
+  font-size: 10px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#rn_big_new p {
+  position: relative;
+  top: -20px;
+  text-align: left;
+  font-size: 22px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#rn_small_new_1 {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  width: 230px;
+  height: 255px;
+  background-color: white;
+}
+
+#rn_small_new_1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#rn_small_new_2 {
+  position: absolute;
+  top: 30px;
+  left: 545px;
+  width: 230px;
+  height: 255px;
+  background-color: white;
+}
+
+#rn_small_new_2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.rn_sm_textbox {
+  width: 230px;
+  height: 110px;
+  background-color: white;
+  border-right : 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-bottom-right-radius: 10px;
+}
+
+.rn_sm_textbox h4 {
+  position: relative;
+  text-align: left;
+  font-size: 10px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.rn_sm_textbox p {
+  position: relative;
+  top: -10px;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#rn_small_new_1:hover img {
+  animation: 0.4s ease-out 0s 1 rc_sm_img_changer;
+  transform: scale(1.2);
+}
+
+#rn_small_new_2:hover img {
+  animation: 0.4s ease-out 0s 1 rc_sm_img_changer;
+  transform: scale(1.2);
+}
+
+#rn_small_new_1:hover .rn_sm_textbox {
+  transform-origin:  bottom;
+  animation: 0.4s ease-out 0s 1 rc_sm_div_changer;
+  height: 130px;
+  transform: translateY(-20px);
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+
+#rn_small_new_2:hover .rn_sm_textbox {
+  transform-origin:  bottom;
+  animation: 0.4s ease-out 0s 1 rc_sm_div_changer;
+  height: 130px;
+  transform: translateY(-20px);
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+
+@keyframes rc_sm_img_changer {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rc_sm_div_changer {
+  0% {
+    height: 110px;
+    transform: translateY(0px);
+  }
+  100% {
+    height: 130px;
+    transform: translateY(-20px);
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+#rn_text_new_1 {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 230px;
+  height: 140px;
+  background-color: white;
+}
+
+#rn_text_new_2 {
+  position: absolute;
+  top: 300px;
+  left: 545px;
+  width: 230px;
+  height: 140px;
+  background-color: white;
+}
+
+.rn_text_new {
+  border-right : 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-bottom-right-radius: 10px;
+}
+
+.rn_text_new h4 {
+  position: relative;
+  text-align: left;
+  font-size: 10px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.rn_text_new p {
+  position: relative;
+  top: -10px;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.rn_text_new:hover {
+  animation: 0.4s ease-out 0s 1 rc_text_div_changer;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+
+@keyframes rc_text_div_changer {
+  0% {
+  }
+  100% {
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+
+#more_news_title {
+  position: relative;
+  top: -10px;
+  left: 150px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}
+
+.grid_more_news {
+  position: relative;
+  overflow: hidden;
+  top: 10px;
+  left: 150px;
+  display: grid;
+  grid-gap: 10px 20px;
+  width: 985px;
+  height: 760px;
+  grid-template-columns: 485px 485px ;
+  padding: 0px;
+}
+
+.grid_more_news img{
+  width: 100%;
+  height: 100%;
+}
+
+.texbox_div_morenews {
+  position: relative;
+  overflow: hidden;
+  top: -20px;
+  height: 100px;
+  width: 480px;
+  background: white;
+  border-right : 1px solid #DDDDDD;
+  border-left : 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.texbox_div_morenews h4 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-size: 10px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.texbox_div_morenews p {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.gridcomponent_more_news:hover img {
+  animation: 0.4s ease-out 0s 1 mn_image_change;
+  transform: scale(1.2);
+}
+
+.gridcomponent_more_news:hover .texbox_div_morenews {
+  transform-origin:  bottom;
+  animation: 0.4s ease-out 0s 1 mn_textbox_change;
+  height: 120px;
+  transform: translateY(-20px);
+  background-color: black;
+}
+
+.gridcomponent_more_news:hover p {
+  color: white;
+}
+
+@keyframes mn_image_change {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes mn_textbox_change {
+  0% {
+    height: 100px;
+    transform: translateY(0px);
+  }
+  100% {
+    height: 120px;
+    transform: translateY(-20px);
+    background-color: black;
+  }
+}
+
+#grandprix_title{
+  position: relative;
+  overflow: hidden;
+  top: -5px;
+  left: 10px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#next_grand_prix{
+  position: relative;
+  overflow: hidden;
+  left: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#grand_prix_name {
+  position: relative;
+  overflow: hidden;
+  top: -15px;
+  left: 0px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#next_race_date {
+  position: absolute;
+  overflow: hidden;
+  top: 10px;
+  left: 135px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.driver {
+  height: 40px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #353442;
+  border-right: 1px solid #353442;
+}
+
+.driver_sqare {
+  position: relative;
+  top: 10px;
+  left: 8px;
+  height: 15px;
+  width: 3px;
+}
+
+.driver_name {
+  position: relative;
+  top: -15px;
+  left: 25px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.arrow {
+  position: relative;
+  top: -55px;
+  left: 250px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#season_drivers_title {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#drivers_grid a {
+  text-decoration: none;
+}
+
+#drivers_grid a:hover .driver{
+  animation: 0.4s ease-out 0s 1 driver_link_bright;
+  border-bottom: 1px solid #DC0000;
+  border-right: 1px solid #DC0000;
+}
+
+@keyframes driver_link_bright {
+  0% {
+    border-bottom: 1px solid #353442;
+    border-right: 1px solid #353442;
+  }
+  100% {
+    border-bottom: 1px solid #DC0000;
+    border-right: 1px solid #DC0000;
+  }
+}
+
+.rb_color {
+  background-color: #1e41ff;
+}
+
+.mer_color {
+  background-color: #00D2BE;
+}
+
+.haas_color {
+  background-color: #BD9E57;
+}
+
+.wil_color {
+  background-color: white;
+}
+
+.ren_color {
+  background-color: #FFF500;
+}
+
+.mac_color {
+  background-color: #FF8700;
+}
+
+.toro_color {
+  background-color: #469BFF;
+}
+
+.fi_color {
+  background-color: #F596C8;
+}
+
+.alfa_color {
+  background-color: #9B0000;
+}
+
+.fer_color {
+  background-color: #DC0000;
+}
+
+.teams {
+  height: 70px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #353442;
+  border-right: 1px solid #353442;
+}
+
+.teams_names {
+  position: relative;
+  top: -10px;
+  left: 0px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.car_pic {
+  position: relative;
+  top: -10px;
+  width: 190px;
+  height: 50px;
+}
+
+.teams_links {
+  text-decoration: none;
+}
+
+#teams_season_title {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.arrow2 {
+  position: relative;
+  top: -110px;
+  left: 250px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.teams_links:hover div{
+  animation: 0.4s ease-out 0s 1 driver_link_bright;
+  border-bottom: 1px solid #DC0000;
+  border-right: 1px solid #DC0000;
+}
+
+#dropdown_ul {
+  position: relative;
+  left: -60px;
+  top: 0px;
+}
+
+#dropdown_ul li{
+  display: inline;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px 18px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dropdown_ul a {
+  color: white;
+  text-decoration: none;
+}
+
+#dropdown_ul a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.race_info_box_dd {
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  width: 240px;
+  height: 240px;
+  background-color: #15151E;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px solid #38383F;
+  border-right: 1px solid #38383F;
+}
+
+.races_box_dd a {
+  text-decoration: none;
+}
+
+.races_box_dd_border {
+  position: relative;
+  top: -270px;
+  left: 102px;
+  width: 150px;
+  height: 270px;
+  border-top: 14px solid #38383F;
+  border-right: 14px solid #38383F;
+  border-top-right-radius: 25px;
+}
+
+.just_a_title {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.race_info_box_img {
+  background-color: #38383F;
+  position: relative;
+  width: 240px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.race_info_box_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.gp_name_box {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.gp_date_box {
+  position: relative;
+  top: 12px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.races_box_dd:hover img{
+  animation: 0.4s ease-out 0s 1 bigger_pic_article;
+  transform: scale(1.2);
+}
+
+.races_box_dd:hover p{
+  color: white;
+}
+
+.races_box_dd:hover .race_info_box_dd {
+  border-color: red;
+}
+
+#allraces_main {
+  background-color: #15151E;
+  overflow: hidden;
+  position: relative;
+  top: 80px;
+  height: 530px;
+  width: 1261px;
+}
+
+.allraces_grid1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  grid-gap: 10px 12.7px;
+  width: 2000;
+  height: 530px;
+  grid-template-columns: 170px 170px 170px
+  170px 170px 170px 170px 170px 170px 170px
+  170px 170px 170px 170px 170px 170px 170px
+  170px 170px 170px 170px;
+  padding: 0px;
+}
+
+.allraces_grid2 {
+  animation: 1.5s ease-out 0s 1 nextrace_allraces_anim;
+  position: relative;
+  top: 0px;
+  left: -2375px;
+  display: grid;
+  grid-gap: 10px 12.7px;
+  width: 2000;
+  height: 530px;
+  grid-template-columns: 170px 170px 170px
+  170px 170px 170px 170px 170px 170px 170px
+  170px 170px 170px 170px 170px 170px 170px
+  170px 170px 170px 170px;
+  padding: 0px;
+}
+
+@keyframes nextrace_allraces_anim {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -2375px;
+  }
+}
+
+#allraces_grid div {
+  display: block;
+  background-color: #15151E;
+  width: 160px;
+  height: 520px;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-bottom-right-radius: 15px;
+}
+
+#allraces_grid img{
+  position: relative;
+  top: 125px;
+  left: 50px;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.allraces_name {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.allraces_number {
+  position: relative;
+  top: 90px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.allraces_month {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#moreoptions_main {
+  position: relative;
+  overflow: hidden;
+  top: 80px;
+  width: 1261px;
+  height: 300px;
+}
+
+#moreoptions_grid {
+  position: relative;
+  overflow: hidden;
+  top: -15px;
+  left: 160px;
+  display: grid;
+  grid-gap: 10px 20px;
+  height: 300px;
+  grid-template-columns: 180px 180px 180px 180px 180px;
+  padding: 0px;
+}
+
+#moreoptions_grid div{
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+  width: 130px;
+  height: 100px;
+}
+
+#opt1 img{
+  position: relative;
+  top: 30%;
+  width: 100%;
+  height: 70%;
+}
+
+#opt2 img{
+  position: relative;
+  top: 60%;
+  width: 100%;
+  height: 40%;
+}
+
+#opt3 img{
+  position: relative;
+  top: 70%;
+  width: 100%;
+  height: 30%;
+}
+
+#opt4 img{
+  width: 100%;
+  height: 100%;
+}
+
+#opt5 img{
+  position: relative;
+  top: 20%;
+  width: 100%;
+  height: 80%;
+}
+
+#thislittle {
+  position: relative;
+  top: 50px;
+  left: 150px;
+  height: 25px;
+  width: 90px;
+}
+
+#thislittle img{
+  height: 100%;
+  width: 100%;
+}
+
+#global_part {
+  position: relative;
+  top: 0px;
+  left: 250px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#global_part b {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
